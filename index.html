@@ -1,0 +1,238 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EASYCOM | Comunicación Segura y Sencilla</title>
+    <style>
+        :root {
+            --blue-main: #2b78c5;
+            --yellow-accent: #fbc02d;
+            --dark-text: #333;
+            --light-bg: #f4f7f6;
+            --white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: var(--dark-text);
+            background-color: var(--light-bg);
+        }
+
+        /* Header & Navigation */
+        header {
+            background: var(--blue-main);
+            color: var(--white);
+            padding: 0.5rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo-img {
+            height: 40px;
+            width: auto;
+            border-radius: 4px;
+        }
+
+        .logo {
+            font-size: 1.2rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        nav a {
+            color: var(--white);
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(43, 120, 197, 0.9), rgba(43, 120, 197, 0.8)), url('https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=2070') center/cover;
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: var(--white);
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        /* Chat Highlight Section */
+        .chat-highlight {
+            background: #222;
+            color: white;
+            padding: 50px 10%;
+            text-align: center;
+            border-bottom: 4px solid var(--yellow-accent);
+        }
+
+        /* Sections */
+        .container {
+            padding: 60px 10%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2rem;
+            color: var(--blue-main);
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: var(--white);
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border-top: 5px solid var(--yellow-accent);
+        }
+
+        .card h3 {
+            margin-bottom: 12px;
+            color: var(--blue-main);
+        }
+
+        /* ODS Section */
+        .ods-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+            text-align: center;
+        }
+
+        .ods-item {
+            background: var(--white);
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #eee;
+        }
+
+        /* Footer */
+        footer {
+            background: #1a1a1a;
+            color: #ccc;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .authors {
+            font-size: 0.85rem;
+            margin-top: 10px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo EASYCOM" class="logo-img">
+            <div class="logo">EASYCOM</div>
+        </div>
+        <nav>
+            <a href="#servicio">Servicio</a>
+            <a href="#chat">Chat Empleados</a>
+            <a href="#ods">ODS</a>
+            <a href="#impacto">Sostenibilidad</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Comunicación Segura</h1>
+        <p>"EASYCOM, mantente conectado de forma segura y sin complicarte la vida"</p>
+    </section>
+
+    <section id="chat" class="chat-highlight">
+        <h2 style="color: var(--yellow-accent); margin-bottom: 15px;">Chat entre los empleados del dominio</h2>
+        <p style="max-width: 800px; margin: 0 auto;">Conectividad total en tiempo real. Un entorno seguro donde la comunicación fluye por departamentos, de forma privada o global, optimizando cada recurso de tu infraestructura.</p>
+    </section>
+
+    <section id="servicio" class="container">
+        <h2 class="section-title">Nuestros Servicios</h2>
+        <div class="features">
+            <div class="card">
+                <h3>Comunicación Total</h3>
+                <p>Grupos por departamentos, mensajes directos privados y canales globales para directivos.</p>
+            </div>
+            <div class="card">
+                <h3>Seguridad</h3>
+                <p>Registro de usuarios y autenticación avanzada para una experiencia segura.</p>
+            </div>
+            <div class="card">
+                <h3>Fácil Despliegue</h3>
+                <p>Sistema diseñado para ser fácil de desplegar en infraestructuras modernas.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="ods" class="container" style="background-color: var(--white);">
+        <h2 class="section-title">Vínculo con ODS</h2>
+        <div class="ods-grid">
+            <div class="ods-item"><strong>ODS 8</strong><p>Desarrollo tecnológico</p></div>
+            <div class="ods-item"><strong>ODS 9</strong><p>Innovación tecnológica</p></div>
+            <div class="ods-item"><strong>ODS 16</strong><p>Autenticación segura</p></div>
+            <div class="ods-item"><strong>ODS 17</strong><p>Uso de Docker en sistemas linux en caso necesario </p></div>
+        </div>
+    </section>
+
+    <section id="impacto" class="container">
+        <h2 class="section-title">Compromiso Ambiental</h2>
+        <div class="features">
+            <div class="card">
+                <h3>Eficiencia</h3>
+                <p>Uso exclusivo de recursos necesarios (CPU, memoria).</p>
+            </div>
+            <div class="card">
+                <h3>Tecnología Verde</h3>
+                <p>Programación asíncrona y virtualización para reducir el gasto de material físico.</p>
+            </div>
+            <div class="card">
+                <h3>Servidor PXE</h3>
+                <p>Servidor para reducir el uso de dispositivos USB en instalaciones de  sistemas operativos localmente en la empresa</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 EASYCOM. Todos los derechos reservados.</p>
+        <div class="authors">
+            Desarrollado por: <strong>Alejandro Rodríguez & Miguel Moreno</strong><br>
+            Contacto: EasyCom@gmail.com<br>
+                      567834567
+        </div>
+    </footer>
+
+</body>
+</html>
